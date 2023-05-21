@@ -1,0 +1,7 @@
+POST http://localhost:4000/api/chats
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTU5MTEwMGU1OTMxZThiMDI3OTNlZiIsImlhdCI6MTY4MzYzNjMzNiwiZXhwIjoxNjg2MjI4MzM2fQ.TsJup1vQaUV9t7px3clWR_Lms8T5fT9AMoDWUwPMqV0
+
+{
+    "userId": "6454de60719a2a2f53bd8aad"
+}

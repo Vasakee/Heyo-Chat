@@ -1,0 +1,2 @@
+GET http://localhost:4000/api/message/64599181dc04b37d8f6fe8d7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTRkZDk2NzE5YTJhMmY1M2JkOGFhNyIsImlhdCI6MTY4MzI4MzU2OCwiZXhwIjoxNjg1ODc1NTY4fQ.Szwp6X80mRL9_ir6kRLHbDLPVEwYpmkuJrl5xa9Faak
