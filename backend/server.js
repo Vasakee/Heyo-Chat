@@ -43,7 +43,7 @@ const PORT = process.env.PORT || 4000
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: 'https://localhost:3001'
+        origin: 'http://localhost:3001'
     },
 })
 
