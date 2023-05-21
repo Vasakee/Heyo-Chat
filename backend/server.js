@@ -43,7 +43,7 @@ const PORT = process.env.PORT || 4000
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: 'https://heyo-chat.onrender.com'
+        origin: 'https://localhost:3001'
     },
 })
 

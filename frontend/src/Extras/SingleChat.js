@@ -10,7 +10,7 @@ import './Messages.css'
 import Chat from './Chat'
 import io from 'socket.io-client'
 
-const ENDPOINT = 'http://localhost:4000';
+const ENDPOINT = 'https://heyo-chat.onrender.com/';
 var socket, selectedChatCompare; 
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
