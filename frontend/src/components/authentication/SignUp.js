@@ -3,10 +3,6 @@ import React, { useState } from 'react'
 import { useToast } from '@chakra-ui/react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import { storage } from '../../Configuration/FirebaseConfig'
-import { database } from '../../Configuration/FirebaseConfig'
-import {ref as ref2, set} from 'firebase/database'
-import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
 
 const SignUp = () => {
     const [name, setName] = useState('')
@@ -25,7 +21,6 @@ const SignUp = () => {
 
     const UploadPics = (Picture) => {
 
-       // const storageRef = ref(storage, 'ProfilePic/' + ProfilePic.name);
         setloading(true)
         if (Picture === undefined) {
             notify({
@@ -39,19 +34,6 @@ const SignUp = () => {
         }
         if (Picture.type === "image/jpg" || Picture.type === "image/png" || Picture.type === "image/jpeg") {
            
-           // uploadBytes(storageRef, ProfilePic)
-           //     .then((snapshot) => {
-            //        getDownloadURL(storageRef)
-              //          .then((url) => {
-                            // eslint-disable-next-line no-unused-expressions, no-sequences
-              //              set(ref2(database, 'profile-url' + name)) , {
-              //              profil_picture: url,
-              //          }
-              //      })
-              //  }).catch((error) => {
-              //      console.log(error.message)
-              //      setloading(false)
-            //})
             const data = new FormData()
             data.append('file', Picture)
             data.append('upload_preset', 'Heyyochat!')
